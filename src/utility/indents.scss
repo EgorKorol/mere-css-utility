@@ -1,4 +1,4 @@
-$base-indent: 8px;
+$base-indent: 8px !default;
 
 /* Generation margins and paddings by base indent */
 @for $i from 0 through 5 {
