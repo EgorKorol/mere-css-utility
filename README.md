@@ -22,20 +22,42 @@ npm i mere-css-utility
 
 ### Quick Start 
 
-In your scss file:
+In your SCSS file:
 
 ```
-@import "node_modules/mere-css-utility/scr/mere";
+@import "node_modules/mere-css-utility/scss/mere";
 
 ------------------------------------
 or you can use only needed packages
 ------------------------------------
 
-@import 'node_modules/mere-css-utility/scr/utility/base';
-@import 'node_modules/mere-css-utility/scr/utility/displays';
-@import 'node_modules/mere-css-utility/scr/utility/flexbox';
-@import 'node_modules/mere-css-utility/scr/utility/indents';
-@import 'node_modules/mere-css-utility/scr/utility/typography';
+@import 'node_modules/mere-css-utility/scss/utility/base';
+@import 'node_modules/mere-css-utility/scss/utility/displays';
+@import 'node_modules/mere-css-utility/scss/utility/flexbox';
+@import 'node_modules/mere-css-utility/scss/utility/indents';
+@import 'node_modules/mere-css-utility/scss/utility/typography';
+```
+
+In your JS file:
+
+```
+import "node_modules/mere-css-utility/scss/mere.scss";
+
+------------------------------------
+or you can use only needed packages
+------------------------------------
+
+import 'node_modules/mere-css-utility/scss/utility/base';
+import 'node_modules/mere-css-utility/scss/utility/displays';
+import 'node_modules/mere-css-utility/scss/utility/flexbox';
+import 'node_modules/mere-css-utility/scss/utility/indents';
+import 'node_modules/mere-css-utility/scss/utility/typography';
+
+------------------------------------
+or you can use CSS build
+------------------------------------
+
+import 'node_modules/mere-css-utility/css/mere-css-utility.css';
 ```
 
 ---
@@ -44,7 +66,7 @@ or you can use only needed packages
 
 ### Displays
 
-In your scss file: `@import "node_modules/mere-css-utility/scr/utility/displays"`
+In your scss file: `@import "node_modules/mere-css-utility/scss/utility/displays"`
 
 CSS class  | Meaning
 ------------- | -------------
@@ -55,7 +77,7 @@ CSS class  | Meaning
 
 ### Flexbox
 
-In your scss file: `@import "node_modules/mere-css-utility/scr/utility/flexbox"`
+In your scss file: `@import "node_modules/mere-css-utility/scss/utility/flexbox"`
 
 CSS class  | Meaning
 ------------- | -------------
@@ -74,7 +96,7 @@ CSS class  | Meaning
 
 ### Typography
 
-In your scss file: `@import "node_modules/mere-css-utility/scr/utility/typography"`
+In your scss file: `@import "node_modules/mere-css-utility/scss/utility/typography"`
 
 CSS class  | Meaning
 ------------- | -------------
@@ -97,11 +119,21 @@ CSS class  | Meaning
 
 ### Indents
 
-In your scss file: `@import "node_modules/mere-css-utility/scr/utility/indents"`  
+In your scss file: `@import "node_modules/mere-css-utility/scss/utility/indents"`  
 
 A set of classes mb, mt, mr, ml, pt, pb, pr, pl with number postfix from 0 to 5.  
 
 Default `$base-indent: 8px`. If you want to rewrite base indent change the variable `$base-indent`.  
+
+```
+$base-indent: 10px;
+@import 'node_modules/mere-css-utility/scss/mere';
+
+or 
+
+$base-indent: 10px;
+@import 'node_modules/mere-css-utility/scss/utility/indents';
+```
 
 `${i}` - is the number of indentation, which is a factor for `$base-indent`  
 
@@ -120,6 +152,6 @@ CSS class  | Meaning
 
 ### Base
 
-In your scss file: `@import "node_modules/mere-css-utility/scr/utility/base"`  
+In your scss file: `@import "node_modules/mere-css-utility/scss/utility/base"`  
 
 This file contains base CSS styles for reset default browsers styles.
