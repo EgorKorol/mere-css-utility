@@ -3,7 +3,7 @@
   "version": "0.1.2",
   "description": "Atomic CSS classes for easier development",
   "style": "css/mere-css-utility.css",
-  "main": "src/mere.scss",
+  "main": "scss/mere.scss",
   "license": "ISC",
   "homepage": "https://github.com/EgorKorol/mere-css-utility#readme",
   "repository": {
@@ -33,8 +33,8 @@
     "build-autoprefix": "postcss --use autoprefixer --output css/mere-css-utility.css css/mere-css-utility.css",
     "build-cleancss": "cleancss -o css/mere-css-utility.css css/mere-css-utility.css",
     "build-clean": "rimraf css",
-    "build-sass": "node-sass --output-style expanded src/mere.scss css/mere-css-utility.css",
-    "dev-sass": "node-sass --output-style expanded --source-map true src/mere.scss css/mere-css-utility.css",
+    "build-sass": "node-sass --output-style expanded scss/mere.scss css/mere-css-utility.css",
+    "dev-sass": "node-sass --output-style expanded --source-map true scss/mere.scss css/mere-css-utility.css",
     "deploy": "npm run build",
     "start": "npm run dev-sass -- --watch"
   },
