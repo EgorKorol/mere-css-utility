@@ -31,11 +31,11 @@ In your scss file:
 or you can use only needed packages
 ------------------------------------
 
-@import './utility/base';
-@import './utility/displays';
-@import './utility/flexbox';
-@import './utility/indents';
-@import './utility/typography';
+@import 'node_modules/mere-css-utility/scr/utility/base';
+@import 'node_modules/mere-css-utility/scr/utility/displays';
+@import 'node_modules/mere-css-utility/scr/utility/flexbox';
+@import 'node_modules/mere-css-utility/scr/utility/indents';
+@import 'node_modules/mere-css-utility/scr/utility/typography';
 ```
 
 ---
