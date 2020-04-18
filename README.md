@@ -47,11 +47,11 @@ import "node_modules/mere-css-utility/scss/mere.scss";
 or you can use only needed packages
 ------------------------------------
 
-import 'node_modules/mere-css-utility/scss/utility/base';
-import 'node_modules/mere-css-utility/scss/utility/displays';
-import 'node_modules/mere-css-utility/scss/utility/flexbox';
-import 'node_modules/mere-css-utility/scss/utility/indents';
-import 'node_modules/mere-css-utility/scss/utility/typography';
+import 'node_modules/mere-css-utility/scss/utility/base.scss';
+import 'node_modules/mere-css-utility/scss/utility/displays.scss';
+import 'node_modules/mere-css-utility/scss/utility/flexbox.scss';
+import 'node_modules/mere-css-utility/scss/utility/indents.scss';
+import 'node_modules/mere-css-utility/scss/utility/typography.scss';
 
 ------------------------------------
 or you can use CSS build
