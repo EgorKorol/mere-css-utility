@@ -1,0 +1,29 @@
+$base-indent: 8px;
+
+/* Generation margins and paddings by base indent */
+@for $i from 0 through 5 {
+  .mt-#{$i} {
+    margin-top: #{$base-indent * $i};
+  }
+  .mr-#{$i} {
+    margin-right: #{$base-indent * $i};
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$base-indent * $i};
+  }
+  .ml-#{$i} {
+    margin-left: #{$base-indent * $i};
+  }
+  .pt-#{$i} {
+    padding-top: #{$base-indent * $i};
+  }
+  .pr-#{$i} {
+    padding-right: #{$base-indent * $i};
+  }
+  .pb-#{$i} {
+    padding-bottom: #{$base-indent * $i};
+  }
+  .pl-#{$i} {
+    padding-left: #{$base-indent * $i};
+  }
+}

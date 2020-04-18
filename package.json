@@ -1,0 +1,72 @@
+{
+  "name": "mere-css-utility",
+  "version": "0.1.1",
+  "description": "Atomic CSS classes for easier development",
+  "style": "css/mere-css-utility.css",
+  "main": "src/mere.scss",
+  "license": "ISC",
+  "homepage": "https://github.com/EgorKorol/mere-css-utility#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EgorKorol/mere-css-utility.git"
+  },
+  "keywords": [
+    "CSS",
+    "atomic",
+    "SCSS",
+    "utility",
+    "classes"
+  ],
+  "author": {
+    "name": "Egor Korol",
+    "email": "egor.korol@mail.ru"
+  },
+  "bugs": {
+    "url": "https://github.com/EgorKorol/mere-css-utility/issues"
+  },
+  "scripts": {
+    "release": "standard-version",
+    "release:patch": "npm run release -- --release-as patch",
+    "release:minor": "npm run release -- --release-as minor",
+    "release:major": "npm run release -- --release-as major",
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+    "build-autoprefix": "postcss --use autoprefixer --output css/mere-css-utility.css css/mere-css-utility.css",
+    "build-cleancss": "cleancss -o css/mere-css-utility.css css/mere-css-utility.css",
+    "build-clean": "rimraf css",
+    "build-sass": "node-sass --output-style expanded src/mere.scss css/mere-css-utility.css",
+    "dev-sass": "node-sass --output-style expanded --source-map true src/mere.scss css/mere-css-utility.css",
+    "deploy": "npm run build",
+    "start": "npm run dev-sass -- --watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "clean-css-cli": "^4.3.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.4",
+    "node-sass": "^4.13.1",
+    "postcss-cli": "^7.1.0",
+    "prettier": "^2.0.4",
+    "rimraf": "^3.0.2",
+    "standard-version": "^7.1.0",
+    "stylelint": "^13.3.2",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.0.0",
+    "stylelint-prettier": "^1.1.2",
+    "stylelint-scss": "^3.17.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.scss": [
+      "prettier --write",
+      "stylelint"
+    ]
+  },
+  "browserslist": [
+    "> 2%"
+  ]
+}
