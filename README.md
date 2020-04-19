@@ -93,6 +93,7 @@ CSS class  | Meaning
 .fd-row-reverse  | flex-direction: row-reverse
 .fd-column  | flex-direction: column
 .fd-column-reverse  | flex-direction: column-reverse
+.fw-wrap  | flex-wrap: wrap
 
 ### Typography
 
@@ -100,12 +101,12 @@ In your scss file: `@import "node_modules/mere-css-utility/scss/utility/typograp
 
 CSS class  | Meaning
 ------------- | -------------
-.fs-1  | font-size: 0.75rem; line-height: 0.75rem
-.fs-2  | font-size: 1rem; line-height: 1rem
-.fs-3  | font-size: 1.25rem; line-height: 1.25rem
-.fs-4  | font-size: 1.5rem; line-height: 1.5rem
-.fs-5  | font-size: 2rem; line-height: 2rem
-.fs-6  | font-size: 2.5rem; line-height: 2.5rem
+.fs-1  | font-size: 0.75rem
+.fs-2  | font-size: 1rem
+.fs-3  | font-size: 1.25rem
+.fs-4  | font-size: 1.5rem
+.fs-5  | font-size: 2rem
+.fs-6  | font-size: 2.5rem
 .fw-light  | font-weight: light
 .fw-normal  | font-weight: normal
 .fw-medium  | font-weight: medium
