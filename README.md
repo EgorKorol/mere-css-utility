@@ -61,7 +61,7 @@ import 'node_modules/mere-css-utility/css/mere-css-utility.css';
 ```
 
 In your HTML file:  
-`<link rel="stylesheet" href="https://unpkg.com/mere-css-utility@0.3.1/css/mere-css-utility.css">`
+`<link rel="stylesheet" href="https://unpkg.com/mere-css-utility@0.3.2/css/mere-css-utility.css">`
 
 ---
 
