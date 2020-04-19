@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mere-css-utility Demo</title>
+    <link rel="stylesheet" href="./css/mere-css-utility.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Fira Sans', sans-serif;
+        background-color: aliceblue;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .indents-padding li {
+        background-color: lightpink;
+        border: 2px dotted green;
+      }
+
+      .indents-margin li {
+        background-color: goldenrod;
+        border: 2px dotted green;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="ta-center fs-6 mb-5 mt-5">Mere-css-utility Demo page</h1>
+      <hr>
+      <section>
+        <h2 class="fs-5 mb-5 mt-4 ta-center">Typography</h2>
+        <div class="d-flex jc-space-between fw-wrap mb-5">
+          <div>
+            <p class="fs-1 mb-2">Text font-size 1</p>
+            <p class="fs-2 mb-2">Text font-size 2</p>
+            <p class="fs-3 mb-2">Text font-size 3</p>
+            <p class="fs-4 mb-2">Text font-size 4</p>
+            <p class="fs-5 mb-2">Text font-size 5</p>
+            <p class="fs-6">Text font-size 6</p>
+          </div>
+          <div>
+            <p class="tt-uppercase mb-2">Text transform uppercase</p>
+            <p class="tt-lowercase mb-2">Text TRANSFORM lowercase</p>
+            <p class="tt-capitalize mb-2">text transform capitalize</p>
+          </div>
+          <div>
+            <p class="fw-light mb-2">Text font-weight light</p>
+            <p class="fw-normal mb-2">Text font-weight normal</p>
+            <p class="fw-medium mb-2">Text font-weight medium</p>
+            <p class="fw-bold">Text font-weight bold</p>
+          </div>
+        </div>
+        <div class="mb-5">
+          <p class="ta-left">Text align left</p>
+          <p class="ta-center">Text align center</p>
+          <p class="ta-right">Text align right</p>
+        </div>
+        <p class="fs-1 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cupiditate quae cum voluptatem excepturi molestiae aperiam ea fugit. Vero accusamus consequatur nulla doloribus veritatis beatae voluptatum omnis laborum! Qui tempora hic laborum aperiam expedita nobis pariatur deserunt a, fuga exercitationem omnis perspiciatis doloribus nostrum ad, assumenda nulla quasi earum amet.</p>
+        <p class="fs-2 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cupiditate quae cum voluptatem excepturi molestiae aperiam ea fugit. Vero accusamus consequatur nulla doloribus veritatis beatae voluptatum omnis laborum! Qui tempora hic laborum aperiam expedita nobis pariatur deserunt a, fuga exercitationem omnis perspiciatis doloribus nostrum ad, assumenda nulla quasi earum amet.</p>
+        <p class="fs-3 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cupiditate quae cum voluptatem excepturi molestiae aperiam ea fugit. Vero accusamus consequatur nulla doloribus veritatis beatae voluptatum omnis laborum! Qui tempora hic laborum aperiam expedita nobis pariatur deserunt a, fuga exercitationem omnis perspiciatis doloribus nostrum ad, assumenda nulla quasi earum amet.</p>
+        <p class="fs-4 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cupiditate quae cum voluptatem excepturi molestiae aperiam ea fugit. Vero accusamus consequatur nulla doloribus veritatis beatae voluptatum omnis laborum! Qui tempora hic laborum aperiam expedita nobis pariatur deserunt a, fuga exercitationem omnis perspiciatis doloribus nostrum ad, assumenda nulla quasi earum amet.</p>
+        <p class="fs-5 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cupiditate quae cum voluptatem excepturi molestiae aperiam ea fugit. Vero accusamus consequatur nulla doloribus veritatis beatae voluptatum omnis laborum! </p>
+        <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cupiditate quae cum voluptatem excepturi molestiae aperiam ea fugit. </p>
+      </section>
+      <hr>
+      <section>
+        <h2 class="fs-5 mb-5 mt-4 ta-center">Indents</h2>
+        <ul class="d-flex fw-wrap jc-space-between ai-center indents-padding mb-5">
+          <li class="pb-0 pt-0 pl-0 pr-0"><span class="fs-3">padding-0</span></li>
+          <li class="pb-1 pt-1 pl-1 pr-1"><span class="fs-3">padding-1</span></li>
+          <li class="pb-2 pt-2 pl-2 pr-2"><span class="fs-3">padding-2</span></li>
+          <li class="pb-3 pt-3 pl-3 pr-3"><span class="fs-3">padding-3</span></li>
+          <li class="pb-4 pt-4 pl-4 pr-4"><span class="fs-3">padding-4</span></li>
+          <li class="pb-5 pt-5 pl-5 pr-5"><span class="fs-3">padding-5</span></li>
+        </ul>
+        <ul class="d-flex fw-wrap jc-space-between ai-center indents-margin">
+          <li><span class="mb-5 mt-5 ml-5 mr-5 fs-3 d-inline-block">margin-5</span></li>
+          <li><span class="mb-4 mt-4 ml-4 mr-4 fs-3 d-inline-block">margin-4</span></li>
+          <li><span class="mb-3 mt-3 ml-3 mr-3 fs-3 d-inline-block">margin-3</span></li>
+          <li><span class="mb-2 mt-2 ml-2 mr-2 fs-3 d-inline-block">margin-2</span></li>
+          <li><span class="mb-1 mt-1 ml-1 mr-1 fs-3 d-inline-block">margin-1</span></li>
+          <li><span class="mb-0 mt-0 ml-0 mr-0 fs-3 d-inline-block">margin-0</span></li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
