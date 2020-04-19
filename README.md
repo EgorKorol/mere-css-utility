@@ -60,7 +60,7 @@ or you can use CSS build
 import 'node_modules/mere-css-utility/css/mere-css-utility.css';
 ```
 
-In your HTML file:
+In your HTML file:  
 `<link rel="stylesheet" href="https://unpkg.com/mere-css-utility@0.3.1/css/mere-css-utility.css">`
 
 ---
